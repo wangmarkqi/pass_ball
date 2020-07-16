@@ -18,6 +18,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../remote_shell" />
     <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
   <component name="RunManager">
@@ -61,10 +62,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="51" y="57" key="#run/0.0.1280.680@0.0.1280.680" timestamp="1594890949392" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1594890801559">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1594891481863">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594890801559" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594891481863" />
+    <state width="405" height="553" key="GridCell.Tab.0.bottom" timestamp="1594891180613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="405" height="553" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594891180613" />
+    <state width="405" height="553" key="GridCell.Tab.0.center" timestamp="1594891180613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="405" height="553" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594891180613" />
+    <state width="405" height="553" key="GridCell.Tab.0.left" timestamp="1594891180613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="405" height="553" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594891180613" />
+    <state width="405" height="553" key="GridCell.Tab.0.right" timestamp="1594891180613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="405" height="553" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594891180613" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1594891007954">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

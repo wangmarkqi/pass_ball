@@ -1,13 +1,13 @@
 [package]
 name = "pass_ball"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["wangmarkqi <wangalexqi@126.com>"]
 edition = "2018"
 description = "mssage queue written by rust."
 license = "MIT"
-homepage = "https://github.com/wangmarkqi/pass.git"
-repository = "https://github.com/wangmarkqi/pass.git"
-documentation = "https://github.com/wangmarkqi/pass.git"
+homepage = "https://github.com/wangmarkqi/pass_ball.git"
+repository = "https://github.com/wangmarkqi/pass_ball.git"
+documentation = "https://github.com/wangmarkqi/pass_ball.git"
 
 
 [dependencies]
