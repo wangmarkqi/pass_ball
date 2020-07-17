@@ -97,7 +97,7 @@ impl SubPub {
         return Ok(s);
     }
     pub fn clean_timeout_len(topic: &str) -> anyhow::Result<String> {
-        let mut data = SubPub::db2vec(topic)?;
+        let data = SubPub::db2vec(topic)?;
         // data倒排序
         let conf = ConfSub::topic_conf(topic)?;
 
@@ -138,9 +138,7 @@ pub fn conf_sub_handler(_conf: web::Query<ConfSub>) -> anyhow::Result<String> {
     Status::feed_ok()
 }
 
-pub fn publish_handler(msg: web::Json<SubPub>) -> anyhow::Result<String> {
-    let mut subpub = msg.into_inner();
-
+pub fn publish_handler(mut subpub: SubPub) -> anyhow::Result<String> {
     // conf topic 没有就失败；
     let topic = subpub.topic.to_string();
     let topics: Topics = TopicManagement::default();

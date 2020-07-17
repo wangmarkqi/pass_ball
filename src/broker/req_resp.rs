@@ -1,7 +1,6 @@
 use crate::broker::topics::Status;
 use crate::common::sled_db::*;
 use crate::common::tools::*;
-use actix_web::web;
 use serde::{Deserialize, Serialize};
 use std::{thread, time};
 #[derive(Serialize, Deserialize, Debug)]
@@ -76,10 +75,7 @@ impl Resp {
     }
 }
 
-pub async fn req_handler(msg: web::Json<Req>) -> anyhow::Result<String> {
-    dbg!("req");
-    dbg!(&msg);
-    let req = msg.into_inner();
+pub async fn req_handler(req: Req) -> anyhow::Result<String> {
     let topic = &req.topic;
     let timeout = &req.timeout;
     req.save()?;
@@ -102,14 +98,4 @@ pub async fn req_handler(msg: web::Json<Req>) -> anyhow::Result<String> {
     remove(&k);
 
     Status::feed_fail("time out")
-}
-
-pub fn heart_beat_handler(tp: &str) -> anyhow::Result<String> {
-    Req::get(tp)
-}
-pub fn resp_handler(msg: web::Json<Resp>) -> anyhow::Result<String> {
-    dbg!("resp");
-    dbg!(&msg);
-    let resp = msg.into_inner();
-    resp.save()
 }

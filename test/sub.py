@@ -17,11 +17,10 @@ def del_topic():
 
 
 def sub():
-    url = "http://127.0.0.1:8084/pass/sub/mytop"
+    url = f"{host}/sub/mytop"
 
     res=requests.get(url)
     print (res.text)
 if __name__ == '__main__':
-    conf_sub()
     sub()
 

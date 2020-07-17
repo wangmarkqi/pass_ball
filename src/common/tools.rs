@@ -18,14 +18,6 @@ pub fn get_dot_env(name: &str) -> String {
     panic!("!!!!!!!!!!no env var: {}", name);
 }
 
-pub fn rand_16_u8() -> [u8; 16] {
-    let mut v: [u8; 16] = [0; 16];
-    for x in v.iter_mut() {
-        *x = rand::random()
-    }
-    v
-}
-
 pub fn time_now_str() -> String {
     let local = Local::now();
     let s = local.to_rfc3339();
@@ -41,11 +33,6 @@ pub fn time_differ(origin: &str) -> i64 {
     res
 }
 
-pub fn get_uuid() -> String {
-    let my_uuid = uuid::Uuid::new_v4();
-    let res = format!("{}", my_uuid);
-    res
-}
 pub fn default_string() -> String {
     "".to_string()
 }

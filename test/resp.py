@@ -12,16 +12,16 @@ def hb():
         if req.text!="":
             d=json.loads(req.text)
             print (d)
-            resp(d['topic'])
+            resp()
 
 
-def resp(topic):
-    url = "http://127.0.0.1:8084/pass/resp"
-    d = dict(
-        topic=topic,
-        answer="133331"
+def resp():
+    url = f"{host}/resp/mytop"
+    data = dict(
+        asdfa=987,
+        pro="adfasdfa"
     )
-    res=requests.post(url, json=d)
+    res=requests.post(url, json=data)
     print ("resp result===",res.text)
 
 if __name__ == '__main__':

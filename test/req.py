@@ -4,11 +4,10 @@ import requests
 from conf import host
 
 def req():
-    url = f"{host}/req"
+    url = f"{host}/req/mytop/10"
     d=dict(
-        topic="mytop",
+        name="mytop",
         data="adfa",
-        timeout=4,
     )
     req=requests.post(url,json=d)
     print (req.text)
