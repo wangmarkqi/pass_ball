@@ -4,7 +4,7 @@ use crate::broker::subpub::{
 };
 use crate::broker::topics::Status;
 use crate::broker::topics::{del_topics_handler, get_topics_handler};
-use actix_web::{web, HttpRequest, Result};
+use actix_web::{web, HttpMessage, HttpRequest, Result};
 
 fn anyhow2str(res: anyhow::Result<String>) -> String {
     match res {
