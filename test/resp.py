@@ -5,18 +5,18 @@ import json
 from conf import host
 
 def hb():
-    url = f"{host}/hb/mytop"
+    url = f"{host}/hb/tianjin_door"
 
     while True:
         req=requests.get(url)
-        if req.text!="":
-            d=json.loads(req.text)
-            print (d)
+        res=req.text
+        if res!="" and "epc" in res:
+            print (req.json())
             resp()
 
 
 def resp():
-    url = f"{host}/resp/mytop"
+    url = f"{host}/resp/tianjin_door"
     data = dict(
         asdfa=987,
         pro="adfasdfa"

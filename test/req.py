@@ -4,12 +4,11 @@ import requests
 from conf import host
 
 def req():
-    url = f"{host}/req/mytop/10"
+    url = f"{host}/req/tianjin_door/10"
     d=dict(
-        name="mytop",
-        data="adfa",
+        order="close",
     )
-    req=requests.post(url,json=d)
+    req=requests.post(url,json="close")
     print (req.text)
 
 

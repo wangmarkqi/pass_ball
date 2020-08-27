@@ -58,6 +58,8 @@ impl Resp {
     pub fn save(&self) -> anyhow::Result<String> {
         let resp = serde_json::to_string(&self)?;
         let k = Resp::resp_str(&self.topic);
+        dbg!("save resp");
+        dbg!(&k, &resp);
         insert(&k, &resp);
         Ok(SUCCESS.to_string())
     }
@@ -70,7 +72,8 @@ impl Resp {
         let data: Resp = serde_json::from_str(&res)?;
         self.answer = data.answer;
         // 拿到就删除
-        remove(&k);
+        dbg!("get and del resp");
+        dbg!(&k, &self.answer);
         Ok(true)
     }
 }
@@ -78,10 +81,15 @@ impl Resp {
 pub async fn req_handler(req: Req) -> anyhow::Result<String> {
     let topic = &req.topic;
     let timeout = &req.timeout;
+
+    let mut resp = Resp::init(topic);
+    let k = Resp::resp_str(topic);
+    // 上来先清除以前的留言
+    remove(&k);
+
     req.save()?;
 
     let now = time_now_str();
-    let mut resp = Resp::init(topic);
     let mut differ: i64 = 0;
     let one_millis = time::Duration::from_millis(1);
     while differ < *timeout {
@@ -93,9 +101,6 @@ pub async fn req_handler(req: Req) -> anyhow::Result<String> {
         }
         differ = time_differ(&now);
     }
-
-    let k = Resp::resp_str(topic);
-    remove(&k);
 
     Status::feed_fail("time out")
 }
