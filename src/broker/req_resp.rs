@@ -2,7 +2,6 @@ use crate::broker::topics::Status;
 use crate::common::sled_db::*;
 use crate::common::tools::*;
 use serde::{Deserialize, Serialize};
-use std::{thread, time};
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Req {
     #[serde(default = "default_string")]
@@ -91,9 +90,7 @@ pub async fn req_handler(req: Req) -> anyhow::Result<String> {
 
     let now = time_now_str();
     let mut differ: i64 = 0;
-    let one_millis = time::Duration::from_millis(1);
     while differ < *timeout {
-        thread::sleep(one_millis);
         let get_answer = resp.get_reps()?;
         if get_answer {
             let res = resp.answer;
