@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c62d7f0c-e9d5-4c4a-af93-791dce6508e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/broker/req_resp.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/broker/req_resp.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/req.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/req.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resp.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/resp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mypy/riskMis" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
@@ -163,7 +159,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594890761555</updated>
-      <workItem from="1598519950219" duration="2477000" />
+      <workItem from="1598519950219" duration="2997000" />
+      <workItem from="1598579675893" duration="56000" />
     </task>
     <servers />
   </component>
@@ -179,10 +176,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="51" y="57" key="#run/0.0.1280.680@0.0.1280.680" timestamp="1594890949392" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1595207206703">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1598579728486">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1595207206703" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1598579728486" />
     <state width="453" height="553" key="GridCell.Tab.0.bottom" timestamp="1598520559433">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
