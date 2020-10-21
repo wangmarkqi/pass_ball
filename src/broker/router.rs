@@ -32,6 +32,7 @@ pub async fn subscribe(myreq: HttpRequest) -> Result<String> {
 pub async fn publish(myreq: HttpRequest, body: Bytes) -> Result<String> {
     let _topic = myreq.match_info().get("topic").unwrap_or("");
     let result = std::str::from_utf8(&body).unwrap(); // return Resul
+
     let subpub = SubPub {
         topic: _topic.to_string(),
         answer: result.to_string(),
@@ -57,6 +58,8 @@ pub async fn del_topic(myreq: HttpRequest) -> Result<String> {
 pub async fn req(info: web::Path<(String, i64)>, body: Bytes) -> Result<String> {
     let result = std::str::from_utf8(&body).unwrap();
     let _topic = &info.0;
+    dbg!("get req");
+    dbg!(result);
     let r = Req {
         topic: _topic.to_string(),
         data: result.to_string(),

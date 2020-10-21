@@ -10,7 +10,8 @@ def hb():
     while True:
         req=requests.get(url)
         res=req.text
-        if res!="" and "epc" in res:
+        print (res)
+        if res!="" and "close" in res:
             print (req.json())
             resp()
 
@@ -26,4 +27,3 @@ def resp():
 
 if __name__ == '__main__':
     hb()
-    # resp("mytop")

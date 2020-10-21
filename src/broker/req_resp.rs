@@ -71,8 +71,6 @@ impl Resp {
         let data: Resp = serde_json::from_str(&res)?;
         self.answer = data.answer;
         // 拿到就删除
-        dbg!("get and del resp");
-        dbg!(&k, &self.answer);
         Ok(true)
     }
 }

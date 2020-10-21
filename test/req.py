@@ -5,9 +5,6 @@ from conf import host
 
 def req():
     url = f"{host}/req/tianjin_door/10"
-    d=dict(
-        order="close",
-    )
     req=requests.post(url,json="close")
     print (req.text)
 
