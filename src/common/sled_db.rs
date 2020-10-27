@@ -1,13 +1,12 @@
 use crate::common::tools::get_dot_env;
-use lazy_static::lazy_static;
+use once_cell::sync::Lazy;
 use std::collections::HashSet;
-lazy_static! {
-    static ref DB: sled::Db = {
-        let path = get_dot_env("SLEDDIR");
-        let _db = sled::open(path).unwrap();
-        _db
-    };
-}
+
+pub static DB: Lazy<sled::Db> = Lazy::new(|| {
+    let path = get_dot_env("SLEDDIR");
+    let _db = sled::open(path).unwrap();
+    _db
+});
 
 pub fn remove(k: &str) -> bool {
     let kk = k.as_bytes().to_vec();
@@ -17,6 +16,7 @@ pub fn remove(k: &str) -> bool {
     }
     false
 }
+
 pub fn insert(k: &str, v: &str) -> bool {
     let kk = k.as_bytes().to_vec();
     let vv = v.as_bytes().to_vec();
@@ -54,6 +54,7 @@ pub fn get_or_empty(k: &str) -> String {
     }
     "".to_owned()
 }
+
 pub fn read_set_from_db(dbk: &str) -> HashSet<String> {
     let peers = {
         let a = get_or_empty(dbk);
@@ -120,6 +121,7 @@ pub fn must_del_str_from_set(dbk: &str, e: &str) {
         panic!("can not del {}: {}", dbk, e);
     }
 }
+
 pub fn must_update_set_from_db_and_str(dbk: &str, content: &str) {
     let mut peers = read_set_from_db(dbk);
     let c = content.trim().to_string();

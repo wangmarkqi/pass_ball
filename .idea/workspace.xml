@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c62d7f0c-e9d5-4c4a-af93-791dce6508e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/sled_db.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/sled_db.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../remote_shell" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
@@ -149,7 +152,7 @@
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="version" value="2" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -167,6 +170,8 @@
       <workItem from="1603187922595" duration="69000" />
       <workItem from="1603188197222" duration="889000" />
       <workItem from="1603241755650" duration="6760000" />
+      <workItem from="1603441152611" duration="1761000" />
+      <workItem from="1603675260746" duration="1464000" />
     </task>
     <servers />
   </component>
@@ -174,37 +179,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594890856521">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603697110223">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1594890856521" />
-    <state x="51" y="57" key="#run" timestamp="1594890949392">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603697110223" />
+    <state width="356" height="545" key="GridCell.Tab.0.bottom" timestamp="1603787557078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="51" y="57" key="#run/0.0.1280.680@0.0.1280.680" timestamp="1594890949392" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603252488693">
+    <state width="356" height="545" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603787557078" />
+    <state width="356" height="545" key="GridCell.Tab.0.center" timestamp="1603787557078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603252488693" />
-    <state width="349" height="362" key="GridCell.Tab.0.bottom" timestamp="1603250965343">
+    <state width="356" height="545" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603787557078" />
+    <state width="356" height="545" key="GridCell.Tab.0.left" timestamp="1603787557078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="349" height="362" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603250965343" />
-    <state width="349" height="362" key="GridCell.Tab.0.center" timestamp="1603250965343">
+    <state width="356" height="545" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603787557078" />
+    <state width="356" height="545" key="GridCell.Tab.0.right" timestamp="1603787557078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="349" height="362" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603250965343" />
-    <state width="349" height="362" key="GridCell.Tab.0.left" timestamp="1603250965343">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="349" height="362" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603250965343" />
-    <state width="349" height="362" key="GridCell.Tab.0.right" timestamp="1603250965343">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="349" height="362" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603250965343" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1594891007954">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1594891007954" />
+    <state width="356" height="545" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603787557078" />
   </component>
 </project>
